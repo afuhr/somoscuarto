@@ -17,6 +17,17 @@
 
         .tabla-container {
             display: flex;
+            flex-wrap: wrap; /* Esto hace que las columnas se ajusten en pantallas pequeñas */
+        }
+
+            .tabla-container > div {
+                flex: 1 1 100%; /* Hace que cada columna ocupe el 100% del ancho en pantallas pequeñas */
+            }
+
+        @media (min-width: 768px) {
+            .tabla-container > div {
+                flex: 1 1 30%; /* En pantallas medianas y grandes, las columnas ocupan un 30% */
+            }
         }
     </style>
 </head>
@@ -28,7 +39,7 @@
                 <h4 id="tablaTitle"></h4>
                 <div id="tabla">
                     <div id="tablaContent"></div>
-                    <button class="btn btn-primary" id="toggle" onclick="toggleTabla()">Ocultar tabla</button>
+                    <button class="btn btn-primary w-100" id="toggle" onclick="toggleTabla()">Ocultar tabla</button>
                 </div>
             </div>
 
@@ -41,17 +52,16 @@
                 <!-- Desafíos -->
                 <div class="text-center">
                     <h5>¿Estás listo para practicar?</h5>
-                    <button class="btn btn-success mt-3" onclick="iniciarDesafioSimple()">Nivel 1</button><br>
-                    <button class="btn btn-warning mt-3" onclick="iniciarDesafioIntermedio()">Nivel 2</button><br>
-                    <button class="btn btn-danger mt-3" onclick="iniciarDesafioCrack()">Nivel 3</button>
+                    <button class="btn btn-success w-100 mt-3" onclick="iniciarDesafioSimple()">Nivel 1</button><br>
+                    <button class="btn btn-warning w-100 mt-3" onclick="iniciarDesafioIntermedio()">Nivel 2</button><br>
+                    <button class="btn btn-danger w-100 mt-3" onclick="iniciarDesafioCrack()">Nivel 3</button>
                     <br />
                     <!-- Volver a la página principal -->
-                    <a href="index.html" class="btn btn-secondary mt-4">Volver al inicio</a>
+                    <a href="index.html" class="btn btn-secondary w-100 mt-4">Volver al inicio</a>
                 </div>
             </div>
 
         </div>
-       
     </div>
 
     <script type="text/javascript" src="js/multiplicaciones.js"></script>
@@ -60,11 +70,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
