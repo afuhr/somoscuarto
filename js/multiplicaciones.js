@@ -206,9 +206,7 @@ function iniciarDesafioCrack() {
     const desafioContent = document.getElementById('desafioContent');
     desafioContent.innerHTML = `
     <h3>Desafío "Eres un crack"</h3>
-    <p>¿Cu᮴o es 5 x 7?</p>
-    <input type="text" id="respuestaCrack" placeholder="Escribe tu respuesta">
-    <button class="btn btn-success mt-3" onclick="verificarRespuestaCrack()">Verificar</button>
+    <p>La estamos desarrollando..mmm...</p>
 `;
 }
 
