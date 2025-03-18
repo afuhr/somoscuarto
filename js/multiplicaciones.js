@@ -88,7 +88,7 @@ function verificarRespuestaSimple() {
         if (indicePregunta < preguntas.length) {
             mostrarPregunta(indicePregunta);
         } else {
-            mensajeResultado.innerHTML = `<h3 class="text-primary">¡Has completado el desafío!</h3>`;
+            mensajeResultado.innerHTML = `<h5 class="text-primary">¡Has completado el desafío!</h5>`;
             mensajeResultado.innerHTML += `<h5 class="text-primary">Total aciertos: ${puntosNivel1}</h5>`;
         }
     }, 2000);
