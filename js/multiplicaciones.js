@@ -40,7 +40,6 @@ function iniciarDesafioSimple() {
 function mostrarPregunta(indice) {
     const desafioContent = document.getElementById('desafioContent');
     const pregunta = preguntas[indice];
-    puntosNivel1 = 0;
 
     desafioContent.innerHTML = `
     <div class="border p-3 rounded">
